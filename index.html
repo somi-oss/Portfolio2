@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Maragatha Mani</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(30, 30, 30, 0.9);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+        }
+        .left {
+            flex: 1;
+            text-align: left;
+            padding: 50px;
+        }
+        .left h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #f39c12;
+            margin: 0;
+        }
+        .right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #f39c12;
+            transition: transform 0.3s ease-in-out;
+        }
+        .right img:hover {
+            transform: scale(1.1);
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+            background: #1e1e1e;
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .section h2 {
+            color: #f39c12;
+        }
+        .skills-list, .projects-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li, .projects-list li {
+            font-size: 18px;
+            padding: 5px 0;
+        }
+        .education-container {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+        .education-column {
+            flex: 1;
+            text-align: center;
+        }
+        .education-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .education-list li {
+            font-size: 18px;
+            padding: 5px 0;
+        }
+        .contact-info {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div id="home" class="container">
+        <div class="left">
+            <h1>Hi, I am Maragatha Mani</h1>
+            <h2>Studying Master of Computer Application at Hindustan University</h2>
+        </div>
+        <div class="right">
+            <img src="./photo.jpg" alt="Profile Picture">
+        </div>
+    </div>
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hi, I'm Maragatha Mani, currently pursuing a Master of Computer Application at Hindustan University. I am passionate about front-end development and specialize in building responsive, interactive, and visually appealing websites.<br>Currently, I'm working on a hotel check-in and check-out system, leveraging HTML and front-end technologies to create seamless user interactions.</p>
+    </div>
+    <div id="skills" class="section">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>Augmented Reality (AR)</li>
+            <li>Virtual Reality (VR)</li>
+        </ul>
+    </div>
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        <ul class="projects-list">
+            <li>Hotel Check-In and Check-Out System - HTML, CSS, JavaScript</li>
+            <li>Portfolio Website - HTML, CSS</li>
+            <li>Child Care Management System - HTML, CSS, JavaScript</li>
+        </ul>
+    </div>
+    <div id="education" class="section">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="education-column">
+                <ul class="education-list">
+                    <li>Hindustan Institution of Technology&science</li>
+		    <li>Master of Computer Application(MCA)</li>
+		    <li>Aug 2024 - april 2026 | Undergoing</li>
+                </ul>
+            </div>
+            <div class="education-column">
+                <ul class="education-list">
+                     <li>Vivekanandha College Of Arts and Science For Women</li>
+		    <li>Bachelore of Computer Science(Bsc cs)</li>
+		    <li>Aug 2021 - May 2024</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <p class="contact-info">Email: <a href="mailto:ammuvijayarangan23@gmail.com">ammuvijayarangan23@gmail.com</a></p>
+        <p class="contact-info">Phone: <a href="tel:+916383257029">+91 6383257029</a></p>
+    </div>
+</body>
+</html>
